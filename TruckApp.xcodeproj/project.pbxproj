@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3E4AF462BBB0FE000B0554F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF452BBB0FE000B0554F /* AppDelegate.swift */; };
+		B3E4AF482BBB0FE000B0554F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF472BBB0FE000B0554F /* SceneDelegate.swift */; };
+		B3E4AF4D2BBB0FE000B0554F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B3E4AF4C2BBB0FE000B0554F /* Base */; };
+		B3E4AF4F2BBB0FE200B0554F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E4AF4E2BBB0FE200B0554F /* Assets.xcassets */; };
+		B3E4AF522BBB0FE200B0554F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B3E4AF512BBB0FE200B0554F /* Base */; };
+		B3E4AF602BBB110D00B0554F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF5F2BBB110D00B0554F /* Constants.swift */; };
+		B3E4AF622BBB11EE00B0554F /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF612BBB11EE00B0554F /* APIManager.swift */; };
+		B3E4AF642BBB121200B0554F /* NetworkUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF632BBB121200B0554F /* NetworkUtils.swift */; };
+		B3E4AF692BBB166D00B0554F /* TruckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF682BBB166D00B0554F /* TruckModel.swift */; };
+		B3E4AF6B2BBB17CB00B0554F /* TruckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF6A2BBB17CB00B0554F /* TruckViewModel.swift */; };
+		B3E4AF6D2BBB1B8B00B0554F /* TruckInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF6C2BBB1B8B00B0554F /* TruckInfoViewController.swift */; };
+		B3E4AF712BBB21BF00B0554F /* TruckInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF6F2BBB21BF00B0554F /* TruckInfoTableViewCell.swift */; };
+		B3E4AF722BBB21BF00B0554F /* TruckInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B3E4AF702BBB21BF00B0554F /* TruckInfoTableViewCell.xib */; };
+		B3E4AF742BBB22BE00B0554F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF732BBB22BE00B0554F /* UIView+Ext.swift */; };
+		B3E4AF782BBB3AFC00B0554F /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4AF772BBB3AFC00B0554F /* MapViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B3E4AF422BBB0FE000B0554F /* TruckApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TruckApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E4AF452BBB0FE000B0554F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3E4AF472BBB0FE000B0554F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B3E4AF4C2BBB0FE000B0554F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3E4AF4E2BBB0FE200B0554F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3E4AF512BBB0FE200B0554F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3E4AF532BBB0FE200B0554F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E4AF5F2BBB110D00B0554F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B3E4AF612BBB11EE00B0554F /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		B3E4AF632BBB121200B0554F /* NetworkUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtils.swift; sourceTree = "<group>"; };
+		B3E4AF682BBB166D00B0554F /* TruckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckModel.swift; sourceTree = "<group>"; };
+		B3E4AF6A2BBB17CB00B0554F /* TruckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckViewModel.swift; sourceTree = "<group>"; };
+		B3E4AF6C2BBB1B8B00B0554F /* TruckInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckInfoViewController.swift; sourceTree = "<group>"; };
+		B3E4AF6F2BBB21BF00B0554F /* TruckInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruckInfoTableViewCell.swift; sourceTree = "<group>"; };
+		B3E4AF702BBB21BF00B0554F /* TruckInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TruckInfoTableViewCell.xib; sourceTree = "<group>"; };
+		B3E4AF732BBB22BE00B0554F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		B3E4AF772BBB3AFC00B0554F /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3E4AF3F2BBB0FE000B0554F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3E4AF392BBB0FE000B0554F = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF442BBB0FE000B0554F /* TruckApp */,
+				B3E4AF432BBB0FE000B0554F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3E4AF432BBB0FE000B0554F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF422BBB0FE000B0554F /* TruckApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3E4AF442BBB0FE000B0554F /* TruckApp */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF592BBB101600B0554F /* Application */,
+				B3E4AF5A2BBB10B800B0554F /* Constants */,
+				B3E4AF5E2BBB10F000B0554F /* Utils */,
+				B3E4AF5C2BBB10D100B0554F /* Service */,
+				B3E4AF5B2BBB10C100B0554F /* Extensions */,
+				B3E4AF5D2BBB10DB00B0554F /* Screen */,
+				B3E4AF4B2BBB0FE000B0554F /* Main.storyboard */,
+				B3E4AF4E2BBB0FE200B0554F /* Assets.xcassets */,
+				B3E4AF502BBB0FE200B0554F /* LaunchScreen.storyboard */,
+				B3E4AF532BBB0FE200B0554F /* Info.plist */,
+			);
+			path = TruckApp;
+			sourceTree = "<group>";
+		};
+		B3E4AF592BBB101600B0554F /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF452BBB0FE000B0554F /* AppDelegate.swift */,
+				B3E4AF472BBB0FE000B0554F /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B3E4AF5A2BBB10B800B0554F /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF5F2BBB110D00B0554F /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		B3E4AF5B2BBB10C100B0554F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF732BBB22BE00B0554F /* UIView+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B3E4AF5C2BBB10D100B0554F /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF612BBB11EE00B0554F /* APIManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		B3E4AF5D2BBB10DB00B0554F /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF672BBB165F00B0554F /* Model */,
+				B3E4AF662BBB164E00B0554F /* View */,
+				B3E4AF652BBB164700B0554F /* ViewModel */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		B3E4AF5E2BBB10F000B0554F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF632BBB121200B0554F /* NetworkUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		B3E4AF652BBB164700B0554F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF6A2BBB17CB00B0554F /* TruckViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B3E4AF662BBB164E00B0554F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF6E2BBB1CCB00B0554F /* Cell */,
+				B3E4AF6C2BBB1B8B00B0554F /* TruckInfoViewController.swift */,
+				B3E4AF772BBB3AFC00B0554F /* MapViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B3E4AF672BBB165F00B0554F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF682BBB166D00B0554F /* TruckModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3E4AF6E2BBB1CCB00B0554F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4AF6F2BBB21BF00B0554F /* TruckInfoTableViewCell.swift */,
+				B3E4AF702BBB21BF00B0554F /* TruckInfoTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3E4AF412BBB0FE000B0554F /* TruckApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3E4AF562BBB0FE200B0554F /* Build configuration list for PBXNativeTarget "TruckApp" */;
+			buildPhases = (
+				B3E4AF3E2BBB0FE000B0554F /* Sources */,
+				B3E4AF3F2BBB0FE000B0554F /* Frameworks */,
+				B3E4AF402BBB0FE000B0554F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TruckApp;
+			productName = TruckApp;
+			productReference = B3E4AF422BBB0FE000B0554F /* TruckApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3E4AF3A2BBB0FE000B0554F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					B3E4AF412BBB0FE000B0554F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+				};
+			};
+			buildConfigurationList = B3E4AF3D2BBB0FE000B0554F /* Build configuration list for PBXProject "TruckApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3E4AF392BBB0FE000B0554F;
+			productRefGroup = B3E4AF432BBB0FE000B0554F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3E4AF412BBB0FE000B0554F /* TruckApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3E4AF402BBB0FE000B0554F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E4AF4F2BBB0FE200B0554F /* Assets.xcassets in Resources */,
+				B3E4AF522BBB0FE200B0554F /* Base in Resources */,
+				B3E4AF4D2BBB0FE000B0554F /* Base in Resources */,
+				B3E4AF722BBB21BF00B0554F /* TruckInfoTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3E4AF3E2BBB0FE000B0554F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3E4AF782BBB3AFC00B0554F /* MapViewController.swift in Sources */,
+				B3E4AF692BBB166D00B0554F /* TruckModel.swift in Sources */,
+				B3E4AF462BBB0FE000B0554F /* AppDelegate.swift in Sources */,
+				B3E4AF742BBB22BE00B0554F /* UIView+Ext.swift in Sources */,
+				B3E4AF622BBB11EE00B0554F /* APIManager.swift in Sources */,
+				B3E4AF6B2BBB17CB00B0554F /* TruckViewModel.swift in Sources */,
+				B3E4AF6D2BBB1B8B00B0554F /* TruckInfoViewController.swift in Sources */,
+				B3E4AF482BBB0FE000B0554F /* SceneDelegate.swift in Sources */,
+				B3E4AF642BBB121200B0554F /* NetworkUtils.swift in Sources */,
+				B3E4AF712BBB21BF00B0554F /* TruckInfoTableViewCell.swift in Sources */,
+				B3E4AF602BBB110D00B0554F /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B3E4AF4B2BBB0FE000B0554F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E4AF4C2BBB0FE000B0554F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3E4AF502BBB0FE200B0554F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3E4AF512BBB0FE200B0554F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3E4AF542BBB0FE200B0554F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B3E4AF552BBB0FE200B0554F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3E4AF572BBB0FE200B0554F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TruckApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Truck App";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.TruckApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		B3E4AF582BBB0FE200B0554F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TruckApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Truck App";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sagar.TruckApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3E4AF3D2BBB0FE000B0554F /* Build configuration list for PBXProject "TruckApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E4AF542BBB0FE200B0554F /* Debug */,
+				B3E4AF552BBB0FE200B0554F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3E4AF562BBB0FE200B0554F /* Build configuration list for PBXNativeTarget "TruckApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E4AF572BBB0FE200B0554F /* Debug */,
+				B3E4AF582BBB0FE200B0554F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3E4AF3A2BBB0FE000B0554F /* Project object */;
+}
